@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.main-content{
+    margin: auto;
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.username{
+    font-size: 25px;
+    font-weight: 500;
+}
