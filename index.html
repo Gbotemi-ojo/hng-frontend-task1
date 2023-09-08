@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <title>Gbenga Oluwadahunsi HNGx Internship program Task 1: Frontend Page Creation with Specific Elements</title>
 </head>
+
 <body>
-    <main>
-        <section class="main-content">
-            <h1 class="username" data-testid="slackUserName">Gbotex_Latex</h2>
-            <img src="https://ca.slack-edge.com/T05FFAA91JP-U05RCHPCQ4U-747612544a46-192" alt="Gbotex_Latex" data-testid="slackDisplayImage">
-            <div class="day_of_week" data-testid="currentDayOfTheWeek"></div>
-            <div data-testid="currentUTCTime" class="current_utc_time"></div>
-            <div data-testid="myTrack">Frontend</div>
-            <a href="https://github.com/Gbotemi-ojo/hng-frontend-task1" data-testid="githubURL">repository url</a>
-        </section>
-    </main>
+    <div>
+
+        <h1 data-testid="slackUserName"> Gbotex_Latex</h1>
+        <img src="https://ca.slack-edge.com/T05FFAA91JP-U05RCHPCQ4U-747612544a46-512" alt="Gbotex_Latex" data-testid="slackDisplayImage">
+        <span id="currentDay" data-testid="currentDayOfTheWeek"></span>
+        <span id="currentTime" data-testid="currentUTCTime"></span>
+        <h4 data-testid="myTrack">Frontend</h4>
+        <a href="https://github.com/gbengaoluwadahunsi/HNGx-Internship-program-task-1" target="_blank"
+            data-testid=“githubURL”>GitHub Repository</a>
+    </div>
     <script src="./script.js"></script>
 </body>
+
 </html>

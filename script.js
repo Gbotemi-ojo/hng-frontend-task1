@@ -1,12 +1,19 @@
-const day_of_week = document.querySelector(".day_of_week");
-const current_utc_time = document.querySelector(".current_utc_time");
-const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-const date = new Date();
-const index = date.getDay();
-const current_day = days[index];
+const updateCurrentDay = () => {
+    const currentDayElement = document.getElementById('currentDay');
+    const now = new Date();
+    const options = { weekday: 'long' };
+    const formattedTime = now.toLocaleString('en-US', options);
+    currentDayElement.textContent = formattedTime;
+}
+setInterval(updateCurrentDay, 1000); 
+updateCurrentDay(); 
 
-const utc = new Date(new Date().getTime() + new Date().getTimezoneOffset() * 60000);
-const utc_time = utc.toISOString().split('.')[0] + 'Z';
+const updateCurrentTime = () => {
+    const currentTimeElement = document.getElementById('currentTime');
+    const now = new Date();
+    const utcMilliseconds = now.getTime();
+    currentTimeElement.textContent = utcMilliseconds.toString();
+}
 
-day_of_week.textContent = current_day;
-current_utc_time.textContent = utc_time;
+setInterval(updateCurrentTime, 1); 
+updateCurrentTime(); 
