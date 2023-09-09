@@ -12,7 +12,7 @@ const updateCurrentTime = () => {
     const currentTimeElement = document.getElementById('currentTime');
     const now = new Date();
     const utcMilliseconds = now.getTime();
-    currentTimeElement.textContent = utcMilliseconds.toString();
+    currentTimeElement.textContent = new Date().toISOString()
 }
 
 setInterval(updateCurrentTime, 1); 
